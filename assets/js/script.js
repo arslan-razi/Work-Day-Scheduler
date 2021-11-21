@@ -52,13 +52,13 @@ function timeCheck() {
     });
 }
 
-// Runs the time check function every 15 minutes
+// Runs the time check function every 10 minutes
 setInterval(function(){
     $('.input-form').each(function(){
         timeCheck($(this));
-        // Also checks to make sure date has not changed
+        // Also checks if date has not changed
         $("#currentDay").text(moment().format('dddd MMMM Do, YYYY'));
     });
-}, 900000);
+}, 600000);
 
 
