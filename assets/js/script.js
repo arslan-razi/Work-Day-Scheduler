@@ -10,7 +10,7 @@ $(document).ready(function() {
     // Get items stored in local storage
     $("#9 .user-input").val(localStorage.getItem("9"));
     $("#10 .user-input").val(localStorage.getItem("10"));
-    $("#11.user-input").val(localStorage.getItem("11"));
+    $("#11 .user-input").val(localStorage.getItem("11"));
     $("#12 .user-input").val(localStorage.getItem("12"));
     $("#13 .user-input").val(localStorage.getItem("13"));
     $("#14 .user-input").val(localStorage.getItem("14"));
@@ -20,8 +20,8 @@ $(document).ready(function() {
 });
 
 // Save Button
-saveBtn.on("click", function (){
-    event.preventDefault();
+saveBtn.on("click", function (e){
+    e.preventDefault();
     // variable for time block id upon save click
     var hourId = $(this).parent().attr("id");
     console.log(hourId);
