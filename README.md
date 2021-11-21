@@ -1,2 +1,2 @@
 # Work Day Scheduler
-## Folder Structure Corrected
+## Code Written OffLine
